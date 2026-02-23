@@ -1,0 +1,10 @@
+name: Local Hello Action
+description: Greet a user from a local JavaScript action
+inputs:
+  who-to-greet:
+    description: Name of the person to greet
+    required: true
+    default: World
+runs:
+  using: node20
+  main: index.js

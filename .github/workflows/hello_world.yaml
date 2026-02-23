@@ -7,4 +7,7 @@ jobs:
   say_hello_nakama:
     runs-on: ubuntu-24.04
     steps:
-      - run: echo "Konichiwa"
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/local-hello
+        with:
+          who-to-greet: "World"
