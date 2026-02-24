@@ -19,3 +19,4 @@ print(f"::notice file=entrypoint.py,line=17::{greeting}")
 # Expose an output for downstream steps/jobs
 with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
     fh.write(f"greeting={greeting}\n")
+    
