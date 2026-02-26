@@ -1,0 +1,14 @@
+version: "3"
+
+tasks:
+  typescript-action-run-local-action:
+    desc: Run the typescript action with @github/local-action
+    dir: ../../authoring_action/javascript-typescript-actions/javascript-action-no-build/typescript-action-with-build
+    cmds:
+      - npm run local-action
+
+  typescript-action-test:
+    desc: Run the typescript action with @github/local-action
+    dir: ../../authoring_action/javascript-typescript-actions/javascript-action-no-build/typescript-action-with-build
+    cmds:
+      - npm run test
